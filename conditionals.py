@@ -8,3 +8,7 @@ elif a < b:
     print("a ({}) is less than b ({})".format(a, b))
 else:
     print("a ({}) is equal to b ({})".format(a, b))
+
+# Now comparing b and c
+print("TERNARY OPERATOR EXAMPLE:")
+print("FINAL BOSS B ({})".format(b) if b > c else "FINAL BOSS IS C ({})".format(c))
