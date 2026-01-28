@@ -3,9 +3,7 @@ def main():
     helper()
 
 def helper():
-    print("This is a helper function.")
-    print("It will be called in main before the method is executed.")
+    print("This will be called in main before the method is executed.")
     print("Otherwise if user calls this method directly, these lines won't be printed.")
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
