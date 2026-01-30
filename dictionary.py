@@ -19,5 +19,9 @@ def main():
     for key, value in d.items():
         print(f"{key}: {value}")
 
+    print("Another way of creating a dictionary using the dict() function:")
+    d2 = dict(key1='value1', key2='value2', key3='value3')
+    print("Created Dictionary:", d2)
+
 
 if __name__ == "__main__": main()
