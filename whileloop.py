@@ -31,4 +31,11 @@ def main():
             continue
         print(i, "is an odd number")
 
+
+    print("Fibonacci sequence using while loop:")
+    a, b = 0, 1
+    while a < 20:
+        print(a, end=', ')
+        a, b = b, a + b
+
 if __name__ == "__main__": main()
