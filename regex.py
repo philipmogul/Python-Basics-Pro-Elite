@@ -28,7 +28,25 @@ def main():
     else:
         print("String does not start with the pattern.")
 
-    
+    pattern_email = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+    email_test_string = "Please contact us at support@example.com or admin@test.org"
+    email_matches = re.findall(pattern_email, email_test_string)
+    print(f"Email pattern: {pattern_email}")
+    print(f"Email matches: {email_matches}")
+
+
+    pattern_digits = r'\d+'
+    digits_test_string = "There are 2 apples and 10 bananas."
+    digits_matches = re.findall(pattern_digits, digits_test_string)
+    print(f"Digits pattern: {pattern_digits}")
+    print(f"Digits matches: {digits_matches}")
+
+
+    pattern_ignore_case = r'hello'
+    ignore_case_test_string = "Hello world! hello everyone!"
+    ignore_case_matches = re.findall(pattern_ignore_case, ignore_case_test_string, re.IGNORECASE)
+    print(f"Ignore case pattern: {pattern_ignore_case}")
+    print(f"Ignore case matches: {ignore_case_matches}")
 
 
 if __name__ == "__main__":main()
