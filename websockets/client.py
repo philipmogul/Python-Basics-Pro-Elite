@@ -20,12 +20,12 @@ def send_message(msg):
 
 # Example usage
 if __name__ == "__main__":
-    send_message("Hello, Server!")
-    input()
-    send_message("This is a test message.")
-    input()
-    send_message("THIS MESSAGES WAS SENT BY PYTHON WEB SOCKETS CLIENT.")
-    input()
+    # Capture user input to send messages
+    while True:
+        msg = input("Enter message to send (or 'quit' to exit): ")
+        if msg.lower() == "quit":
+            break
+        send_message(msg)
     send_message("DISCONNECT")
     client.close()
 
