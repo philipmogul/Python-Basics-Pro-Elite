@@ -6,6 +6,9 @@ class Parent:
     def greet(self):
         return f"Hello, my name is {self.name}."
     
+    def inherited(self):
+        return "This method is inherited from the Parent class."
+    
 class Child(Parent):
     def __init__(self, name, age):
         super().__init__(name) # super() calls the Parent's __init__ 
@@ -13,7 +16,9 @@ class Child(Parent):
         self.age = age
 
     def introduce(self):
-        return f"{self.greet()} I am {self.age} years old."
+        # To inherit a method from the Parent class, user super().method_name()
+        inherited_message = super().inherited()
+        return f"{self.greet()} I am {self.age} years old.\n{inherited_message}"
 
 def main():
     print("Testing inheritance in Python.")
