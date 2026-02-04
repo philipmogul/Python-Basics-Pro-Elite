@@ -37,6 +37,10 @@ def main():
     print(f"Is Printable: {sample_string.isprintable()}")
     print(f"Starts with '  Hello': {sample_string.startswith('  Hello')}")
     print(f"Ends with 'Functions.  ': {sample_string.endswith('Functions.  ')}")
+    print(f"Partition String: {sample_string.partition('World')}")
+    print(f"R Partition String: {sample_string.rpartition('World')}")
+    print(f"Center String: '{sample_string.center(50)}'")
+    print(f"Justify String: '{sample_string.ljust(50)}'")
 
 if __name__ == "__main__":
     main() 
