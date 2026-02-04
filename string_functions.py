@@ -29,6 +29,12 @@ def main():
     print(f"Find 'Universe': {sample_string.find('Universe')}")
     print(f"Find 'Python': {sample_string.find('Python')}")
     print(f"Is Alphanumeric: {sample_string.isalnum()}")
+    print(f"Is Alphabetic: {sample_string.isalpha()}")
+    print(f"Is Digit: {sample_string.isdigit()}")
+    print(f"Is Lowercase: {sample_string.islower()}")
+    print(f"Is Uppercase: {sample_string.isupper()}")
+    print(f"Is Space: {sample_string.isspace()}")
+    print(f"Is Printable: {sample_string.isprintable()}")
     print(f"Starts with '  Hello': {sample_string.startswith('  Hello')}")
     print(f"Ends with 'Functions.  ': {sample_string.endswith('Functions.  ')}")
 
