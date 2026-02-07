@@ -8,5 +8,4 @@ def main():
     for row in db_data:
         print("{} , {}".format(row['user_id'], row['bio']))
 
-
 if __name__=="__main__": main()
