@@ -8,6 +8,9 @@ class db_class():
 
     def create(self, db):
         print(f"CREATED TABLE")
+        # I will create a table here 
+        
+
 
 
     def update(self, db):
